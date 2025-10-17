@@ -23,7 +23,7 @@ head(data)
 # data <- data %>%
 #   filter(RoB != "high")
 
-# dim(df)
+# dim(data)
 
 #--------------------------------------------------------
 # Subgroup analysis by optical HR sensor generation / ECG app 1.0 vs 2.0
