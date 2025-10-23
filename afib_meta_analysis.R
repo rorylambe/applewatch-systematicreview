@@ -30,7 +30,7 @@ head(data)
 #--------------------------------------------------------
 # table(data$optical_hr_sensor)
 
-# keep only studies with third gen HR sensor (Series 6 onward), and ECG app 2.0
+# keep only studies with first/second/third gen HR sensor, and ECG app 1.0 / 2.0
 # data <- data%>%
 #   filter(optical_hr_sensor == "second_gen")
 
