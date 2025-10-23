@@ -29,12 +29,10 @@ dim(df)
 #--------------------------------------------------------
 n  <- df$sample_size
 md <- df$mean_diff
-s2 <- df$sd_diff_calc^2    # reported sample variance of differences
+s2 <- df$sd_diff_calc^2  
 
-# Bias-adjusted variance (Tipton & Shuster, eq. 2)
 df$s2_star   <- s2 + (md^2)/n
 
-# Variances needed for meta-analysis
 df$V_bias    <- df$s2_star / n
 df$logs2     <- log(df$s2_star) + 1/(n - 1)
 df$V_logs2   <- 2/(n - 1)
@@ -76,7 +74,6 @@ loa_maker <- function(bias, V_bias, logs2, V_logs2) {
   if (m < 3) warning("Few studies: t-quantile and RVE unstable.")
   tcrit     <- qt(0.975, m - 1)
   
-  # 95% CI for pooled mean bias 
   CI_bias_lower <- bias_mean - tcrit * sqrt(bias_row["V_mod"])
   CI_bias_upper <- bias_mean + tcrit * sqrt(bias_row["V_mod"])
   
