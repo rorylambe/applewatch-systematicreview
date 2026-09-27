@@ -12,7 +12,7 @@ Analysis code accompanying:
 
 This living systematic review and meta-analysis evaluated the agreement between Apple Watch health metrics and criterion measures. Nine databases were searched from inception to 24 September 2025. The review included 82 studies assessing 14 health metrics (430,052 participants), across all Apple Watch models through Series 9 and Ultra 2.
 
-The review is designed as a **living** synthesis. Searches will be updated every 12 months, or sooner following major Apple Watch hardware or software updates, and updates will be shared via the [Open Science Framework](https://osf.io/v5d3k).
+The review is designed as a **living** synthesis. Searches will be updated every 12 months and updates will be shared via the [Open Science Framework](https://osf.io/v5d3k).
 
 ## Meta-analysis results
 
